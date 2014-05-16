@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="CS586.mda.entity.ATM" x="240" y="52">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="CS586.mda.operations.Operations" x="1026" y="239">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="CS586.mda.metaModel.MDA_Model" x="491" y="61">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.metaModel.MDA_Event"/>
+        <Association destinationClassName="CS586.mda.state.VM"
+            endpointName="vm" kind="Simple"/>
+        <Communication destinationClassName="CS586.mda.state.VM"/>
+    </Class>
+    <Class name="CS586.mda.metaModel.MDA_Event" x="761" y="100">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="CS586.mda.entity.ATM1" x="268" y="348">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.entity.ATM"/>
+        <Association
+            destinationClassName="CS586.mda.metaModel.MDA_Model"
+            endpointName="m" kind="Simple"/>
+        <Communication destinationClassName="CS586.mda.metaModel.MDA_Model"/>
+    </Class>
+    <Class name="CS586.mda.state.VM" x="479" y="334">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="CS586.mda.state.State"
+            endpointName="currentState" kind="Simple"/>
+        <Association destinationClassName="CS586.mda.state.State"
+            endpointName="states" kind="Simple"/>
+        <Communication destinationClassName="CS586.mda.state.State"/>
+    </Class>
+    <Class name="CS586.mda.entity.ATM3" x="10" y="303">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.entity.ATM"/>
+        <Association
+            destinationClassName="CS586.mda.metaModel.MDA_Model"
+            endpointName="m" kind="Simple"/>
+        <Communication destinationClassName="CS586.mda.metaModel.MDA_Model"/>
+    </Class>
+    <Class name="CS586.mda.entity.ATM2" x="-1" y="64">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.entity.ATM"/>
+        <Association
+            destinationClassName="CS586.mda.metaModel.MDA_Model"
+            endpointName="m" kind="Simple"/>
+        <Communication destinationClassName="CS586.mda.metaModel.MDA_Model"/>
+    </Class>
+    <Class name="CS586.mda.state.State" x="771" y="245">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="CS586.mda.operations.Operations"
+            endpointName="operation" kind="Simple"/>
+        <Association destinationClassName="CS586.mda.state.VM"
+            endpointName="vm" kind="Simple"/>
+    </Class>
+</ClassDiagram>

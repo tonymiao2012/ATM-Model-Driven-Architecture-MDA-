@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="CS586.mda.operations.implement.ATM3ActionsTrans"
+        x="633" y="370">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.operations.ATMActionsTrans"/>
+    </Class>
+    <Class name="CS586.mda.operations.implement.ATM1ActionsLocker"
+        x="632" y="-14">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.operations.ATMActionsLocker"/>
+    </Class>
+    <Class name="CS586.mda.operations.Operations" x="31" y="98">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="CS586.mda.operations.ATMActionsTrans"
+            endpointName="atmtran" kind="Simple"/>
+        <Association
+            destinationClassName="CS586.mda.operations.ATMActionsLocker"
+            endpointName="atmlock" kind="Simple"/>
+        <Communication destinationClassName="CS586.mda.operations.ATMActionsTrans"/>
+        <Communication destinationClassName="CS586.mda.operations.ATMActionsLocker"/>
+    </Class>
+    <Class name="CS586.mda.operations.implement.ATM1ActionsTrans"
+        x="808" y="109">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.operations.ATMActionsTrans"/>
+    </Class>
+    <Class name="CS586.mda.operations.implement.ATM2ActionsLocker"
+        x="633" y="56">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.operations.ATMActionsLocker"/>
+    </Class>
+    <Class name="CS586.mda.operations.ATMActionsTrans" x="366" y="202">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="CS586.mda.operations.ATMActionsLocker" x="375" y="82">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="CS586.mda.operations.implement.ATM2ActionsTrans"
+        x="806" y="262">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.operations.ATMActionsTrans"/>
+    </Class>
+    <Class name="CS586.mda.operations.implement.ATM3ActionsLocker"
+        x="636" y="126">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.operations.ATMActionsLocker"/>
+    </Class>
+</ClassDiagram>

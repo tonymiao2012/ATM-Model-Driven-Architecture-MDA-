@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="CS586.mda.factoryModel.SolidFactory2" x="244" y="241">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.factoryModel.AbstractFactory"/>
+    </Class>
+    <Class name="CS586.mda.factoryModel.AbstractFactory" x="208" y="90">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="CS586.mda.operations.ATMActionsTrans"
+            endpointName="atmtran" kind="Simple"/>
+        <Association
+            destinationClassName="CS586.mda.operations.ATMActionsLocker"
+            endpointName="atmlock" kind="Simple"/>
+    </Class>
+    <Class name="CS586.mda.operations.Operations" x="555" y="8">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="CS586.mda.factoryModel.AbstractFactory"
+            endpointName="afactory" kind="Simple"/>
+        <Association
+            destinationClassName="CS586.mda.operations.ATMActionsTrans"
+            endpointName="atmtran" kind="Simple"/>
+        <Association
+            destinationClassName="CS586.mda.operations.ATMActionsLocker"
+            endpointName="atmlock" kind="Simple"/>
+        <Communication destinationClassName="CS586.mda.factoryModel.AbstractFactory"/>
+        <Communication destinationClassName="CS586.mda.operations.ATMActionsLocker"/>
+        <Communication destinationClassName="CS586.mda.operations.ATMActionsTrans"/>
+        <Communication destinationClassName="CS586.mda.factoryModel.factorySetUp"/>
+    </Class>
+    <Class name="CS586.mda.factoryModel.SolidFactory" x="113" y="242">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.factoryModel.AbstractFactory"/>
+    </Class>
+    <Class name="CS586.mda.factoryModel.SolidFactory3" x="369" y="245">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="CS586.mda.factoryModel.AbstractFactory"/>
+    </Class>
+    <Class name="CS586.mda.operations.ATMActionsLocker" x="366" y="9">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="CS586.mda.operations.ATMActionsTrans" x="630" y="265">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="CS586.mda.factoryModel.factorySetUp" x="47" y="123">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
